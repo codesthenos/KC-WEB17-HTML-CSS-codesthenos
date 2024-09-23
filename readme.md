@@ -1,4 +1,4 @@
-# Práctica del modulo HTML-CSS
+# Práctica del modulo HTML-CSS impartido por Kevin Julián Martínez Escobar [@kevinccbsg](https://github.com/kevinccbsg) en KeepCoding
 
 La práctica consiste en crear un portfolio.
 
