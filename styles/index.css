@@ -1,3 +1,15 @@
+body {
+  background-color: var(--bg-color-light-scheme);
+  color: var(--color-light-scheme);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-color-dark-scheme);
+    color: var(--color-dark-scheme);
+  }
+}
+
 h1 {
   text-align: center;
 }
