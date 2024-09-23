@@ -14,6 +14,16 @@ La práctica consiste en crear un portfolio.
 
 - La pagina debe visualizarse en las versiones actuales de Google Chrome, Mozilla Firefox y Microsoft Edge
 
+## Forma de visualizar la práctica
+
+- Para **Clonar** el repositorio usando el comando `git clone`:
+  - En nuestro ordenador, nos dirigimos al path donde queramos clonar el repositorio, por ejemplo _/Desktop_
+  - Una vez estemos en el path donde queremos que genere la copia del repositorio, abrimos un **terminal**
+  - En el terminal escribimos `git clone https://github.com/codesthenos/KC-WEB17-HTML-CSS-codesthenos.git`. Esto creara un repositorio local en nuestro ordenador con el nombre **KC-WEB17-HTML-CSS-codesthenos**
+- Para **Visualizar** el portfolio:
+  - Instalamos [_visual studio code_](https://code.visualstudio.com/download) y la extensión _Live server_
+  - Dentro del repositorio que acabos de crear en local, hacemos click derecho en **index.html** y le damos a la opción _Open with Live Server_
+
 ## Descripcion del portfolio
 
 - Crear un **header** con una barra de _navegación_, con **links** a cada elemento del portfolio.
