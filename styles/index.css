@@ -1,4 +1,11 @@
 body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  min-height: 100vh;
+  text-align: center;
   background-color: var(--bg-color-light-scheme);
   color: var(--color-light-scheme);
 }
@@ -10,6 +17,6 @@ body {
   }
 }
 
-h1 {
-  text-align: center;
+main {
+  flex-grow: 1;
 }
