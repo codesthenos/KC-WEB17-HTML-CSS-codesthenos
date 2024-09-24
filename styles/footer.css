@@ -1,59 +1,72 @@
 .footer {
-  position: sticky;
   bottom: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 0 1rem;
 
-  & span {
+  span {
     font-weight: 600;
   }
 
-  & ul {
+  > div {
+    width: 315px;
+    text-align: left;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+  }
+
+  ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 2rem;
     padding: 0;
 
-    & a {
-      text-decoration: none;
-      color: inherit;
-      cursor: pointer;
+    img {
+      max-height: 2.5rem;
+      transition: transform 1s ease;
+    }
+    
 
-      & img {
-        max-height: 2.5rem;
-        transition: transform 1s ease;
-      }
+    a:hover #github-logo-white {
+      animation: fade-out 1s ease-out forwards;
     }
 
-    & a:hover #github-logo-white {
-      animation: fade-out 1.5s ease-out forwards;
-    }
-
-    & a:hover #github-letras-logo-white{
+    a:hover #github-letras-logo-white {
       position: absolute;
       display: block;
       opacity: 0;
       animation: fade-in 1.5s ease-in forwards;
     }
 
-    & li:first-child:hover + li img {
+    li:first-child:hover + li img {
       transform: translateX(2.5rem);
     }
 
-    & a:hover #linkedin-logo-white {
-      animation: fade-out 1.5s ease-out forwards;
+    a:hover #linkedin-logo-white {
+      animation: fade-out 1s ease-out forwards;
     }
 
-    & a:hover #linkedin-letras-logo-white{
+    a:hover #linkedin-letras-logo-white {
       position: absolute;
       display: block;
       opacity: 0;
       animation: fade-in 1.5s ease-in forwards;
     }
   }
+}
+
+#linkedin-logo-white:not(:hover) {
+  animation: fade-in 1s ease-in forwards;
+}
+
+#github-logo-white:not(:hover) {
+  animation: fade-in 1s ease-in forwards;
 }
 
 #github-letras-logo-dark,
