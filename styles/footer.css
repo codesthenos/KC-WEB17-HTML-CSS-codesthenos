@@ -1,4 +1,4 @@
-footer {
+.footer {
   position: sticky;
   bottom: 0;
   background-color: var(--footer-bg-color);
@@ -18,5 +18,31 @@ footer {
         max-height: 2.5rem;
       }
     }
+  }
+}
+
+#github-logo-white {
+  display: none;
+}
+
+#linkedin-logo-white {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  #github-logo-dark {
+    display: none;
+  }
+
+  #github-logo-white {
+    display: block;
+  }
+
+  #linkedin-logo-dark {
+    display: none;
+  }
+
+  #linkedin-logo-white {
+    display: block;
   }
 }

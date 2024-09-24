@@ -1,7 +1,6 @@
 :root {
-  --bg-color-light-scheme: #e4e7eb;
-  --color-light-scheme: #0c1c2c;
-  --bg-color-dark-scheme: #041424;
-  --color-dark-scheme: #dfebf3;
-  --footer-bg-color: #93b467;
+  --bg-color-light-scheme: #f5f5f5;
+  --color-light-scheme: #111;
+  --bg-color-dark-scheme: #2c2d2e;
+  --color-dark-scheme: #e9f0f1;
 }
