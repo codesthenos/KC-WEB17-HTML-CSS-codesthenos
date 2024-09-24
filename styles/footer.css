@@ -41,30 +41,37 @@
       }
     }
 
-    li:hover #github-logo-white, li:hover #linkedin-logo-white {
-      animation: fade-out .5s ease-out forwards;
-    }
-
-    li:hover #github-letras-logo-white, li:hover #linkedin-letras-logo-white {
-      animation: fade-in 1.5s ease-in forwards;
-    }
-
-    li:hover + li #linkedin-logo-white {
-      transform: translateX(1rem);
-      transition: transform .75s ease-in;
-    }
-
-    li:hover #github-letras-logo-white {
-      transform: translateX(-2rem);
-      transition: transform .75s ease-in;
-    }
-
     img {
       max-height: 2.5rem;
     }
   }
 }
 
+@media (min-width: 1024px) {
+  .footer {
+    nav {
+      ul {
+        li:hover #github-logo-white, li:hover #linkedin-logo-white {
+          animation: fade-out .5s ease-out forwards;
+        }
+    
+        li:hover #github-letras-logo-white, li:hover #linkedin-letras-logo-white {
+          animation: fade-in 1.5s ease-in forwards;
+        }
+    
+        li:hover + li #linkedin-logo-white {
+          transform: translateX(1rem);
+          transition: transform .75s ease-in;
+        }
+    
+        li:hover #github-letras-logo-white {
+          transform: translateX(-2rem);
+          transition: transform .75s ease-in;
+        }
+      }
+    }
+  }
+}
 
 @keyframes fade-in {
   0% {
@@ -85,6 +92,7 @@
     opacity: 0;
   }
 }
+
 /*
 @media (prefers-color-scheme: light) {
   #github-logo-white,
