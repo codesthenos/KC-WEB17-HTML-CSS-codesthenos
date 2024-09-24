@@ -27,18 +27,12 @@
     margin: 0;
     padding: 0;
 
-    li {
-      position: relative;
-
-      #linkedin-letras-logo-dark,
-      #linkedin-logo-dark,
-      #linkedin-letras-logo-white,
-      #github-letras-logo-dark,
-      #github-logo-dark,
-      #github-letras-logo-white {
-        position: absolute;
-        opacity: 0;
-      }
+    #github-letras-logo-white,
+    #linkedin-letras-logo-white,
+    #github-letras-logo-dark,
+    #linkedin-letras-logo-dark {
+      position: absolute;
+      opacity: 0;
     }
 
     img {
@@ -47,10 +41,29 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  #github-logo-dark,
+  #linkedin-logo-dark,
+  #linkedin-letras-logo-dark,
+  #github-letras-logo-dark {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #github-logo-white,
+  #linkedin-logo-white,
+  #linkedin-letras-logo-white,
+  #github-letras-logo-white {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .footer {
     nav {
       ul {
+        /*Dark mode animations*/
         li:hover #github-logo-white, li:hover #linkedin-logo-white {
           animation: fade-out .5s ease-out forwards;
         }
@@ -58,14 +71,32 @@
         li:hover #github-letras-logo-white, li:hover #linkedin-letras-logo-white {
           animation: fade-in 1.5s ease-in forwards;
         }
+
+        li:hover #github-letras-logo-white {
+          transform: translateX(-2rem);
+          transition: transform .75s ease-in;
+        }
     
         li:hover + li #linkedin-logo-white {
           transform: translateX(1rem);
           transition: transform .75s ease-in;
         }
+        /*Light mode animations*/
+        li:hover #github-logo-dark, li:hover #linkedin-logo-dark {
+          animation: fade-out .5s ease-out forwards;
+        }
     
-        li:hover #github-letras-logo-white {
+        li:hover #github-letras-logo-dark, li:hover #linkedin-letras-logo-dark {
+          animation: fade-in 1.5s ease-in forwards;
+        }
+
+        li:hover #github-letras-logo-dark {
           transform: translateX(-2rem);
+          transition: transform .75s ease-in;
+        }
+    
+        li:hover + li #linkedin-logo-dark {
+          transform: translateX(1rem);
           transition: transform .75s ease-in;
         }
       }
@@ -92,19 +123,3 @@
     opacity: 0;
   }
 }
-
-/*
-@media (prefers-color-scheme: light) {
-  #github-logo-white,
-  #linkedin-logo-white,
-  #linkedin-letras-logo-white,
-  #github-letras-logo-white {
-    display: none;
-  }
-
-  #linkedin-logo-dark:not(:hover), #github-logo-dark:not(:hover) {
-    display: block;
-    animation: fade-in 1s ease-in forwards;
-  }
-}
-*/
