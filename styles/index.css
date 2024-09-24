@@ -19,3 +19,9 @@ body {
 main {
   flex-grow: 1;
 }
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
