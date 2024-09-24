@@ -1,7 +1,6 @@
 .header {
   position: sticky;
   top: 0;
-  background-color: var(--footer-bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +21,10 @@
       text-decoration: none;
       color: inherit;
       cursor: pointer;
+    }
+
+    & a:hover {
+
     }
   }
 }

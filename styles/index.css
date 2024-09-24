@@ -5,14 +5,14 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   text-align: center;
-  background-color: var(--bg-color-light-scheme);
-  color: var(--color-light-scheme);
+  background-color: var(--bg-color-dark-scheme);
+  color: var(--color-dark-scheme);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   body {
-    background-color: var(--bg-color-dark-scheme);
-    color: var(--color-dark-scheme);
+    background-color: var(--bg-color-light-scheme);
+    color: var(--color-light-scheme);
   }
 }
 
