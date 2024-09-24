@@ -35,6 +35,13 @@
       opacity: 0;
     }
 
+    #github-logo-dark,
+    #linkedin-logo-dark,
+    #github-logo-white,
+    #linkedin-logo-white {
+      animation: fade-in 0.5s ease-in forwards;
+    }
+
     img {
       max-height: 2.5rem;
     }
