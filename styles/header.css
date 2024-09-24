@@ -1,0 +1,27 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--footer-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5rem;
+
+  & img {
+    max-height: 3.5rem;
+  }
+
+  & ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+
+    & a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+  }
+}
