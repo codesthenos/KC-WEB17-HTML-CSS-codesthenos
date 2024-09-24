@@ -24,4 +24,9 @@ main {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  transition: opacity 1s ease-in-out;
+}
+
+.link:hover {
+  opacity: .5;
 }
