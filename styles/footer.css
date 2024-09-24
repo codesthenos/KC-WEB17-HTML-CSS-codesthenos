@@ -2,12 +2,16 @@
   position: sticky;
   bottom: 0;
   background-color: var(--footer-bg-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
   & ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 2rem;
+    padding: 0;
 
     & a {
       text-decoration: none;
