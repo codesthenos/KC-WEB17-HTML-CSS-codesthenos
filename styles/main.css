@@ -2,12 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  section {
-    h2 {
-      font-weight: 100;
-    }
-  }
-
   #skills {
     background-color: brown;
   }
