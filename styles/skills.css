@@ -23,6 +23,43 @@
           height: 1rem;
           border: 1px var(--color-dark-scheme) solid;
           border-radius: 10px;
+          position: relative;
+          #git-github-progress {
+            width: 50%;
+            height: 99%;
+            background-color: red;
+            border-radius: 10px;
+          }
+          #html-progress {
+            width: 65%;
+            height: 99%;
+            background-color: red;
+            border-radius: 10px;
+          }
+          #css-progress {
+            width: 55%;
+            height: 99%;
+            background-color: red;
+            border-radius: 10px;
+          }
+          #javascript-progress {
+            width: 80%;
+            height: 99%;
+            background-color: red;
+            border-radius: 10px;
+          }
+          #nodejs-progress {
+            width: 30%;
+            height: 99%;
+            background-color: red;
+            border-radius: 10px;
+          }
+          #reactjs-progress {
+            width: 20%;
+            height: 99%;
+            background-color: red;
+            border-radius: 10px;
+          }
         }
       }
     }
