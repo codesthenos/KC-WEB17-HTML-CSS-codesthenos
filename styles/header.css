@@ -11,6 +11,10 @@
     max-height: 3.5rem;
   }
 
+  span {
+    display: none;
+  }
+
   ul {
     list-style: none;
     display: flex;
@@ -18,6 +22,20 @@
     gap: 2rem;
     padding: 0;
     margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    nav {
+      ul {
+        display: none;
+      }
+
+      span {
+        display: block;
+      }
+    }
   }
 }
 
