@@ -26,6 +26,15 @@ body {
   opacity: .5;
 }
 
+.button {
+  color: var(--color-dark-scheme);
+  background-color: var(--bg-color-dark-scheme);
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 1rem;
+  display: inline-block;
+}
+
 .hidden {
   display: none;
 }
