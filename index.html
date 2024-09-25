@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="styles/description.css" />
     <link rel="stylesheet" href="styles/skills.css" />
     <link rel="stylesheet" href="styles/banner.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
@@ -147,20 +148,45 @@
         <a class="button" href="projects.html">Codesthenos' portfolio</a>
       </section>
 
-      <section id="contact">
-        <form aria-label="Contact me form">
-          <div>
+      <section class="contact" id="contact">
+        <form class="form" aria-label="Contact me form">
+          <div class="text-input">
             <label for="name">Name</label>
-            <input type="text" id="name" required aria-required="true" />
-
-            <label for="surname">Surname</label>
-            <input type="text" id="surname" required aria-required="true" />
+            <input
+              type="text"
+              id="name"
+              required
+              aria-required="true"
+              placeholder="put your name here (required)"
+              aria-placeholder="put your name here (required)"
+            />
           </div>
 
-          <div>
-            <label for="phone">Phone</label>
-            <input type="number" id="phone" required aria-required="true" />
+          <div class="text-input">
+            <label for="surname">Surname</label>
+            <input
+              type="text"
+              id="surname"
+              required
+              aria-required="true"
+              placeholder="put your surname here (required)"
+              aria-placeholder="put your surname here (required)"
+            />
+          </div>
 
+          <div class="text-input">
+            <label for="phone">Phone</label>
+            <input
+              type="number"
+              id="phone"
+              required
+              aria-required="true"
+              placeholder="put your phone here (required)"
+              aria-placeholder="put your phone here (required)"
+            />
+          </div>
+
+          <div class="text-input">
             <label for="github-user">Github username</label>
             <input
               type="text"
@@ -170,11 +196,13 @@
               title="Username must start with @. Example: @username"
               aria-label="Github username (starting with @)"
               aria-required="true"
+              placeholder="put your github username here (@<username>) (required)"
+              aria-placeholder="put your github username here (@<username>) (required)"
             />
           </div>
 
           <fieldset aria-labelledby="meeting-question">
-            <legend id="meeting-question">How did you met me?</legend>
+            <legend id="meeting-question">How did you meet me?</legend>
             <div>
               <label for="university">University</label>
               <input
@@ -228,15 +256,16 @@
             </div>
           </fieldset>
 
-          <div>
+          <div class="text-input">
             <label for="more-info">More info</label>
             <textarea
               id="more-info"
-              placeholder="more info about you here"
               maxlength="180"
               required
               aria-required="true"
               aria-label="Additional information"
+              placeholder="more info about you here"
+              aria-placeholder="more info about you here"
             ></textarea>
           </div>
 

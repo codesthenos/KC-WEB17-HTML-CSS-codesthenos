@@ -1,0 +1,19 @@
+.main {
+  .contact {
+    padding: 1rem;
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      .text-input {
+        display: flex;
+        flex-direction: column;
+        input {
+          padding: .5rem;
+          border-radius: 5px;
+          border: 1px var(--color-dark-scheme) solid;
+        }
+      }
+    }
+  }
+}
