@@ -4,7 +4,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   min-height: 100dvh;
-  text-align: center;
   background-color: var(--bg-color-dark-scheme);
   color: var(--color-dark-scheme);
 }
@@ -14,10 +13,6 @@ body {
     background-color: var(--bg-color-light-scheme);
     color: var(--color-light-scheme);
   }
-}
-
-main {
-  flex-grow: 1;
 }
 
 .link {

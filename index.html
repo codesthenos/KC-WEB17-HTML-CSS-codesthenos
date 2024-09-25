@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/variables.css" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
@@ -43,7 +44,7 @@
         <span>Menu</span>
         <ul>
           <li>
-            <a class="link" href="#projects">Projects</a>
+            <a class="link" href="projects.html">Projects</a>
           </li>
 
           <li>
@@ -57,12 +58,77 @@
       </nav>
     </header>
 
-    <main>
-      <section id="projects">PROJECTS</section>
+    <main class="main">
+      <section>
+        <h2>Guillermo Ruiz Arranz - codesthenos</h2>
+      </section>
 
-      <section id="skills">SKILLS</section>
+      <section id="skills">
+        <h2>SKILLS</h2>
+      </section>
 
-      <section id="contact">CONTACT</section>
+      <section id="contact">
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" />
+          </div>
+
+          <div>
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" />
+
+            <label for="github-user">Github username</label>
+            <input type="text" id="github-user" />
+          </div>
+
+          <fieldset>
+            <legend>How did you met me?</legend>
+            <div>
+              <label for="university">University</label>
+              <input type="radio" id="university" name="meeting-way" />
+            </div>
+
+            <div>
+              <label for="keepcoding">Keepcoding kick-off</label>
+              <input type="radio" id="keepcoding" name="meeting-way" />
+            </div>
+
+            <div>
+              <label for="school">School</label>
+              <input type="radio" id="school" name="meeting-way" />
+            </div>
+
+            <div>
+              <label for="github">Github</label>
+              <input type="radio" id="github" name="meeting-way" />
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="more-info">More info</label>
+            <textarea
+              id="more-info"
+              placeholder="more info about you here"
+            ></textarea>
+          </div>
+
+          <div>
+            <input type="checkbox" id="newsletter" />
+            <label for="newsletter"
+              >I want to subscribe to the newsletter</label
+            >
+          </div>
+
+          <div>
+            <button>Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer class="footer">
