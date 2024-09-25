@@ -2,10 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  #skills {
-    background-color: brown;
-  }
-
   #contact {
     background-color: rgb(51, 167, 51);
   }

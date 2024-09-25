@@ -12,7 +12,19 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
       place-content: center;
-      gap: .5rem;
+      gap: 1.5rem;
+      .skill {
+        h4 {
+          padding-bottom: .5rem;
+        }
+        .total-progress {
+          width: 100%;
+          max-width: 375px;
+          height: 1rem;
+          border: 1px var(--color-dark-scheme) solid;
+          border-radius: 10px;
+        }
+      }
     }
   }
 }
