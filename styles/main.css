@@ -11,7 +11,19 @@
     }
   }
 
+  section {
+    background-color: rgb(74, 147, 150);
+  }
+
+  #skills {
+    background-color: brown;
+  }
+
+  #projects {
+    background-color: rgb(104, 36, 168);
+  }
+
   #contact {
-    background-color: aqua;
+    background-color: rgb(51, 167, 51);
   }
 }
