@@ -1,14 +1,18 @@
 .main {
   .skills {
+    padding: 1rem;
     h2, h4 {
       margin: 0;
     }
     ul {
       margin: 0;
       padding: 0;
+      padding-top: 1rem;
       list-style: none;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+      place-content: center;
+      gap: .5rem;
     }
   }
 }
