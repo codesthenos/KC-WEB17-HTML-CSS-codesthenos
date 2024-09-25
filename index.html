@@ -150,55 +150,59 @@
 
       <section class="contact" id="contact">
         <form class="form" aria-label="Contact me form">
-          <div class="text-input">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              required
-              aria-required="true"
-              placeholder="put your name here (required)"
-              aria-placeholder="put your name here (required)"
-            />
+          <div class="group-2-fields">
+            <div class="text-input">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                required
+                aria-required="true"
+                placeholder="put your name here (required)"
+                aria-placeholder="put your name here (required)"
+              />
+            </div>
+
+            <div class="text-input">
+              <label for="surname">Surname</label>
+              <input
+                type="text"
+                id="surname"
+                required
+                aria-required="true"
+                placeholder="put your surname here (required)"
+                aria-placeholder="put your surname here (required)"
+              />
+            </div>
           </div>
 
-          <div class="text-input">
-            <label for="surname">Surname</label>
-            <input
-              type="text"
-              id="surname"
-              required
-              aria-required="true"
-              placeholder="put your surname here (required)"
-              aria-placeholder="put your surname here (required)"
-            />
-          </div>
+          <div class="group-2-fields">
+            <div class="text-input">
+              <label for="phone">Phone</label>
+              <input
+                type="number"
+                id="phone"
+                required
+                aria-required="true"
+                placeholder="put your phone here (required)"
+                aria-placeholder="put your phone here (required)"
+              />
+            </div>
 
-          <div class="text-input">
-            <label for="phone">Phone</label>
-            <input
-              type="number"
-              id="phone"
-              required
-              aria-required="true"
-              placeholder="put your phone here (required)"
-              aria-placeholder="put your phone here (required)"
-            />
-          </div>
-
-          <div class="text-input">
-            <label for="github-user">Github username</label>
-            <input
-              type="text"
-              id="github-user"
-              required
-              pattern="^@[^\s]+"
-              title="Username must start with @. Example: @username"
-              aria-label="Github username (starting with @)"
-              aria-required="true"
-              placeholder="put your github username here (@<username>) (required)"
-              aria-placeholder="put your github username here (@<username>) (required)"
-            />
+            <div class="text-input">
+              <label for="github-user">Github username</label>
+              <input
+                type="text"
+                id="github-user"
+                required
+                pattern="^@[^\s]+"
+                title="Username must start with @. Example: @username"
+                aria-label="Github username (starting with @)"
+                aria-required="true"
+                placeholder="put your github username here (@<username>) (required)"
+                aria-placeholder="put your github username here (@<username>) (required)"
+              />
+            </div>
           </div>
 
           <fieldset aria-labelledby="meeting-question">

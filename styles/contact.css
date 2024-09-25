@@ -1,10 +1,16 @@
 .main {
   .contact {
     padding: 1rem;
+    padding-top: 1.5rem;
     .form {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
+      .group-2-fields {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
       .text-input {
         display: flex;
         flex-direction: column;
@@ -32,6 +38,23 @@
         display: flex;
         gap: .5rem;
         padding: 1rem 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    .contact {
+      padding: 1rem 5rem;
+      padding-top: 1.5rem;
+      .form {
+        .group-2-fields {
+          flex-direction: row;
+          .text-input {
+            flex: 1;
+          }
+        }
       }
     }
   }
