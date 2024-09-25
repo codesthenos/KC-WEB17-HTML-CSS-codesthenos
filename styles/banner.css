@@ -1,0 +1,28 @@
+.main {
+  .banner {
+    height: 33vh;
+    height: 33dvh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .banner-image {
+      background-image: url('./../assests/bannerHD.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: .6;
+      z-index: -1;
+    }
+
+    .button {
+      max-height: fit-content;
+      align-self: center;
+    }
+  }
+}
