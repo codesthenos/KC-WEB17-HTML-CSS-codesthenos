@@ -4,15 +4,12 @@
   flex-direction: column;
 
   section {
+    background-color: rgb(74, 147, 150);
     flex: 1;
 
     h2 {
       font-weight: 100;
     }
-  }
-
-  section {
-    background-color: rgb(74, 147, 150);
   }
 
   #skills {

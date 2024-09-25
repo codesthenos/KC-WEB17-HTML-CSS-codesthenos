@@ -31,16 +31,16 @@
       <img
         id="white-header-logo"
         src="assests/strength-gains-white-icon.png"
-        alt="a man and a woman doing a headstand forming a pyramid inscribed in a circumference formed by the letters S and G, strength-gains branding, white color"
+        alt="Strength-gains branding logo in white: two people forming a headstand pyramid."
       />
 
       <img
         id="dark-header-logo"
         src="assests/strength-gains-dark-icon.png"
-        alt="a man and a woman doing a headstand forming a pyramid inscribed in a circumference formed by the letters S and G, strength-gains branding, dark color"
+        alt="Strength-gains branding logo in dark: two people forming a headstand pyramid."
       />
 
-      <nav>
+      <nav aria-label="Main web navigation" role="navigation">
         <span>Menu</span>
         <ul>
           <li>
@@ -99,46 +99,91 @@
         </ul>
       </section>
 
-      <section id="projects">BANNER CON IMG BACKGROUND</section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div role="img" aria-label="Banner image with background illustration.">
+          BANNER CON IMG BACKGROUND
+        </div>
+      </section>
 
       <section id="contact">
-        <form>
+        <form aria-label="Contact form">
           <div>
             <label for="name">Name</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" required aria-required="true" />
 
             <label for="surname">Surname</label>
-            <input type="text" id="surname" />
+            <input type="text" id="surname" required aria-required="true" />
           </div>
 
           <div>
             <label for="phone">Phone</label>
-            <input type="number" id="phone" />
+            <input type="number" id="phone" required aria-required="true" />
 
             <label for="github-user">Github username</label>
-            <input type="text" id="github-user" />
+            <input
+              type="text"
+              id="github-user"
+              required
+              pattern="^@[^\s]+"
+              title="Username must start with @. Example: @username"
+              aria-label="Github username (starting with @)"
+              aria-required="true"
+            />
           </div>
 
-          <fieldset>
-            <legend>How did you met me?</legend>
+          <fieldset aria-labelledby="meeting-question">
+            <legend id="meeting-question">How did you met me?</legend>
             <div>
               <label for="university">University</label>
-              <input type="radio" id="university" name="meeting-way" />
+              <input
+                type="radio"
+                id="university"
+                name="meeting-way"
+                value="university"
+                required
+                aria-required="true"
+                aria-label="Met at University"
+              />
             </div>
 
             <div>
               <label for="keepcoding">Keepcoding kick-off</label>
-              <input type="radio" id="keepcoding" name="meeting-way" />
+              <input
+                type="radio"
+                id="keepcoding"
+                name="meeting-way"
+                value="keepcoding"
+                required
+                aria-required="true"
+                aria-label="Met at Keepcoding kick-off"
+              />
             </div>
 
             <div>
               <label for="school">School</label>
-              <input type="radio" id="school" name="meeting-way" />
+              <input
+                type="radio"
+                id="school"
+                name="meeting-way"
+                value="school"
+                required
+                aria-required="true"
+                aria-label="Met at School"
+              />
             </div>
 
             <div>
               <label for="github">Github</label>
-              <input type="radio" id="github" name="meeting-way" />
+              <input
+                type="radio"
+                id="github"
+                name="meeting-way"
+                value="github"
+                required
+                aria-required="true"
+                aria-label="Met via Github"
+              />
             </div>
           </fieldset>
 
@@ -147,19 +192,31 @@
             <textarea
               id="more-info"
               placeholder="more info about you here"
+              maxlength="180"
+              required
+              aria-required="true"
+              aria-label="Additional information"
             ></textarea>
           </div>
 
           <div>
-            <input type="checkbox" id="newsletter" />
-            <label for="newsletter"
+            <input
+              type="checkbox"
+              id="newsletter"
+              aria-labelledby="newsletter-label"
+            />
+            <label id="newsletter-label" for="newsletter"
               >I want to subscribe to the newsletter</label
             >
           </div>
 
           <div>
-            <button>Submit</button>
-            <button type="reset">Reset</button>
+            <button type="submit" aria-label="Submit contact form">
+              Submit
+            </button>
+            <button type="reset" aria-label="Reset contact form fields">
+              Reset
+            </button>
           </div>
         </form>
       </section>
@@ -174,42 +231,47 @@
             href="https://github.com/kevinccbsg"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Kevin's Github profile"
           >
             <strong>@kevinccbsg</strong>
           </a>
         </p>
       </div>
 
-      <nav>
+      <nav
+        aria-label="Footer navigation to my social networks"
+        role="navigation"
+      >
         <ul>
           <li>
             <a
               href="https://github.com/codesthenos"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Codestheno's Github profile"
             >
               <img
                 id="github-letras-logo-dark"
                 src="assests/github-letras-logo-dark.png"
-                alt="logo letras github dark"
+                alt="Github text logo dark mode"
               />
 
               <img
                 id="github-logo-dark"
                 src="assests/github-logo-dark.png"
-                alt="logo github dark"
+                alt="Github logo dark mode"
               />
 
               <img
                 id="github-letras-logo-white"
                 src="assests/github-letras-logo-white.png"
-                alt="logo letras github white"
+                alt="Github text logo white mode"
               />
 
               <img
                 id="github-logo-white"
                 src="assests/github-logo-white.png"
-                alt="logo github white"
+                alt="Github logo white mode"
               />
             </a>
           </li>
@@ -219,29 +281,30 @@
               href="https://www.linkedin.com/in/codesthenos"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visit Codestheno's linkedIn profile"
             >
               <img
                 id="linkedin-letras-logo-dark"
                 src="assests/linkedin-letras-logo-dark.png"
-                alt="logo letras linkedin dark"
+                alt="LinkedIn text logo dark mode"
               />
 
               <img
                 id="linkedin-logo-dark"
                 src="assests/linkedin-logo-dark.png"
-                alt="linkedin logo dark"
+                alt="LinkedIn logo dark mode"
               />
 
               <img
                 id="linkedin-letras-logo-white"
                 src="assests/linkedin-letras-logo-white.png"
-                alt="linkedin letras logo white"
+                alt="LinkedIn text logo white mode"
               />
 
               <img
                 id="linkedin-logo-white"
                 src="assests/linkedin-logo-white.png"
-                alt="linkedin logo white"
+                alt="LinkedIn logo white mode"
               />
             </a>
           </li>
