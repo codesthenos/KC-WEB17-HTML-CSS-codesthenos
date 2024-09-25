@@ -1,4 +1,9 @@
 .footer {
+  /* con esto puedo hacer que el footer se quede sticky como el header
+  position: sticky;
+  bottom: 0;
+  background-color: var(--bg-color-dark-scheme);
+  */
   display: flex;
   justify-content: space-between;
   align-items: center;
