@@ -202,7 +202,9 @@
           </div>
 
           <fieldset aria-labelledby="meeting-question">
-            <legend id="meeting-question">How did you meet me?</legend>
+            <div>
+              <legend id="meeting-question">How did you meet me?</legend>
+            </div>
             <div>
               <label for="university">University</label>
               <input
@@ -261,6 +263,7 @@
             <textarea
               id="more-info"
               maxlength="180"
+              rows="7"
               required
               aria-required="true"
               aria-label="Additional information"
@@ -280,11 +283,19 @@
             >
           </div>
 
-          <div>
-            <button type="submit" aria-label="Submit contact form">
+          <div class="form-buttons">
+            <button
+              class="button"
+              type="submit"
+              aria-label="Submit contact form"
+            >
               Submit
             </button>
-            <button type="reset" aria-label="Reset contact form fields">
+            <button
+              class="button"
+              type="reset"
+              aria-label="Reset contact form fields"
+            >
               Reset
             </button>
           </div>

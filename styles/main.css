@@ -1,8 +1,4 @@
 .main { 
   display: flex;
   flex-direction: column;
-
-  #contact {
-    background-color: rgb(51, 167, 51);
-  }
 }
