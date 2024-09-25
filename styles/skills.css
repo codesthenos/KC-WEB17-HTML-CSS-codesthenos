@@ -25,44 +25,98 @@
           border-radius: 10px;
           position: relative;
           #git-github-progress {
-            width: 50%;
             height: 99%;
             background-color: red;
             border-radius: 10px;
+            animation: fill-git-github-progress 3s linear forwards;
           }
           #html-progress {
-            width: 65%;
             height: 99%;
             background-color: red;
             border-radius: 10px;
+            animation: fill-html-progress 3s linear forwards;
           }
           #css-progress {
-            width: 55%;
             height: 99%;
             background-color: red;
             border-radius: 10px;
+            animation: fill-css-progress 3s linear forwards;
           }
           #javascript-progress {
-            width: 80%;
             height: 99%;
             background-color: red;
             border-radius: 10px;
+            animation: fill-javascript-progress 3s linear forwards;
           }
           #nodejs-progress {
-            width: 30%;
             height: 99%;
             background-color: red;
             border-radius: 10px;
+            animation: fill-nodejs-progress 3s linear forwards;
           }
           #reactjs-progress {
-            width: 20%;
             height: 99%;
             background-color: red;
             border-radius: 10px;
+            animation: fill-reactjs-progress 3s linear forwards;
           }
         }
       }
     }
+  }
+}
+
+@keyframes fill-git-github-progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes fill-html-progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes fill-css-progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes fill-javascript-progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes fill-nodejs-progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes fill-reactjs-progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
   }
 }
 
