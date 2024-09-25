@@ -1,23 +1,33 @@
-.main {
-  flex-grow: 1;
+.main { 
   display: flex;
   flex-direction: column;
 
   section {
-    background-color: rgb(74, 147, 150);
-    flex: 1;
-
     h2 {
       font-weight: 100;
     }
   }
 
-  #skills {
-    background-color: brown;
+  .banner {
+    height: 33vh;
+    height: 33dvh;
+    position: relative;
+
+    .banner-image {
+      background-image: url('./../assests/bannerHD.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
 
-  #projects {
-    background-color: rgb(104, 36, 168);
+  #skills {
+    background-color: brown;
   }
 
   #contact {

@@ -25,3 +25,7 @@ body {
 .link:hover {
   opacity: .5;
 }
+
+.hidden {
+  display: none;
+}
