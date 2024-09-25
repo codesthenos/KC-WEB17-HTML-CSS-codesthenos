@@ -1,0 +1,24 @@
+.main {
+  .skills {
+    h2, h4 {
+      margin: 0;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    .skills {
+      ul {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
