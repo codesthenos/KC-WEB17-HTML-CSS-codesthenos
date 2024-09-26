@@ -63,6 +63,20 @@ main {
   }
 }
 
+@media (prefers-color-scheme: light) {
+  main {
+    .skills {
+      ul {
+        li {
+          .total-progress {
+            border: 1px var(--color-light-scheme) solid;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (width > 1024px) {
   main {
     .skills {

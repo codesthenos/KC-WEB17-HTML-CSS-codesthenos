@@ -2,7 +2,7 @@ main {
   .contact {
     padding: 1rem;
     padding-top: 1.5rem;
-    .form {
+    form {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
@@ -43,12 +43,26 @@ main {
   }
 }
 
+@media (prefers-color-scheme: light) {
+  main {
+    .contact {
+      form {
+        .text-input {
+          input {
+            border: 1px var(--color-light-scheme) solid;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (width > 1024px) {
   main {
     .contact {
       padding: 1rem 5rem;
       padding-top: 1.5rem;
-      .form {
+      form {
         .group-2-fields {
           flex-direction: row;
           .text-input {
