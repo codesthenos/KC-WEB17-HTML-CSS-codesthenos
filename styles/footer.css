@@ -40,46 +40,48 @@
     }
   }
 }
-/*Media querie to add the animations in the footer icons*/
-@media (min-width: 1024px) {
+/*Media querie to show the creator at the right, and Kevin in the left, his teacher*/
+@media (width > 450px) {
   .footer {
-    nav {
-      ul {
-        li:hover .narrow-logo {
-          animation: fade-out .5s ease-out forwards;
-        }    
-        li:hover .wide-logo {
-          animation: fade-in 1.5s ease-in forwards;
-        }
-        li:hover .wide-github-logo {
-          transform: translateX(-2rem);
-          transition: transform .75s ease-in;
-        }    
-        li:hover + li .narrow-linkedin-logo {
-          transform: translateX(1rem);
-          transition: transform .75s ease-in;
-        }
-      }
+    div {
+      display: block;
     }
   }
 }
-
-@media (max-width: 600px) {
+/*Media querie to show add 'special thanks' and the 'almost all rights reserved'*/
+@media (width > 730px) {
   .footer {
     div {
       p {
         span {
-          display: none;
+          display: block;
         }
       }
     }
   }
 }
-
-@media (max-width: 450px) {
+/*Media querie to add the footer icons animations*/
+@media (width > 1024px) {
   .footer {
-    div {
-      display: none;
+    nav {
+      ul {
+        li:hover {
+          .narrow-logo {
+            animation: fade-out .5s ease-out forwards;
+          }
+          .wide-logo {
+            animation: fade-in 1.5s ease-in forwards;
+          }    
+          .wide-github-logo {
+            transform: translateX(-2rem);
+            transition: transform .75s ease-in;
+          }    
+          .narrow-linkedin-logo {
+            transform: translateX(1rem);
+            transition: transform .75s ease-in;
+          }
+        }
+      }
     }
   }
 }
