@@ -6,7 +6,7 @@ main {
     display: flex;
     justify-content: center;
     .banner-image {
-      background-image: url('../assests/bannerHD.png');
+      background-image: url('../../assets/bannerHD.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -38,7 +38,7 @@ main {
   main {
     .banner {
       .banner-image {
-        background-image: url('../assests/bannerWIDE.png');
+        background-image: url('../../assets/bannerWIDE.png');
       }
     }
   }
