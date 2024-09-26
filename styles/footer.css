@@ -1,5 +1,7 @@
 .footer {
-  /* con esto puedo hacer que el footer se quede sticky como el header
+  /* with this we make the footer sticky like and behave like the header,
+     but like in the header we then had to add a media querie to change
+     the background color we are adding here, but using --bg-color-light -scheme
   position: sticky;
   bottom: 0;
   background-color: var(--bg-color-dark-scheme);
@@ -8,12 +10,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-
   div, nav {
     margin: 0;
     flex: 1;
     text-align: center;
-
     p {
       margin: 0;
 
@@ -21,37 +21,27 @@
         font-style: italic;
       }
     }
-  }
-
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-
-    #github-letras-logo-white,
-    #linkedin-letras-logo-white,
-    #github-letras-logo-dark,
-    #linkedin-letras-logo-dark {
-      position: absolute;
-      opacity: 0;
-    }
-
-    #github-logo-dark,
-    #linkedin-logo-dark,
-    #github-logo-white,
-    #linkedin-logo-white {
-      animation: fade-in 0.5s ease-in forwards;
-    }
-
-    img {
-      max-height: 2.5rem;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;  
+      .wide-logo {
+        position: absolute;
+        opacity: 0;
+      }
+      .narrow-logo {
+        animation: fade-in 0.5s ease-in forwards;
+      }  
+      img {
+        max-height: 2.5rem;
+      }
     }
   }
 }
-
+/*Media querie to add the animations in the footer icons*/
 @media (min-width: 1024px) {
   .footer {
     nav {
