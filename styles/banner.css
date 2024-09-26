@@ -1,4 +1,4 @@
-.main {
+main {
   .banner {
     height: 33vh;
     height: 33dvh;
@@ -28,7 +28,7 @@
 }
 
 @media (min-width: 836px) {
-  .main {
+  main {
     .banner {
       height: 50vh;
       height: 50dvh;
@@ -37,7 +37,7 @@
 }
 
 @media (min-width: 1024px) {
-  .main {
+  main {
     .banner {
       .banner-image {
         background-image: url('../assests/bannerWIDE.png');

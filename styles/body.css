@@ -6,6 +6,10 @@ body {
   min-height: 100dvh;
   background-color: var(--bg-color-dark-scheme);
   color: var(--color-dark-scheme);
+  main { 
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (prefers-color-scheme: light) {

@@ -1,4 +1,4 @@
-.main {
+main {
   .description {
     padding: 1rem;
     > div {
@@ -17,7 +17,7 @@
 }
 
 @media (min-width: 1024px) {
-  .main {
+  main {
     .description {
       padding: 1rem 5rem;
     }

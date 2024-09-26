@@ -1,4 +1,4 @@
-.main {
+main {
   .contact {
     padding: 1rem;
     padding-top: 1.5rem;
@@ -43,8 +43,8 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .main {
+@media (width > 1024px) {
+  main {
     .contact {
       padding: 1rem 5rem;
       padding-top: 1.5rem;
