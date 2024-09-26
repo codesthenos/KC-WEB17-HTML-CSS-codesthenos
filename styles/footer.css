@@ -16,7 +16,6 @@
     text-align: center;
     p {
       margin: 0;
-
       span {
         font-style: italic;
       }
@@ -46,39 +45,17 @@
   .footer {
     nav {
       ul {
-        /*Dark mode animations*/
-        li:hover #github-logo-white, li:hover #linkedin-logo-white {
+        li:hover .narrow-logo {
           animation: fade-out .5s ease-out forwards;
-        }
-    
-        li:hover #github-letras-logo-white, li:hover #linkedin-letras-logo-white {
+        }    
+        li:hover .wide-logo {
           animation: fade-in 1.5s ease-in forwards;
         }
-
-        li:hover #github-letras-logo-white {
+        li:hover .wide-github-logo {
           transform: translateX(-2rem);
           transition: transform .75s ease-in;
-        }
-    
-        li:hover + li #linkedin-logo-white {
-          transform: translateX(1rem);
-          transition: transform .75s ease-in;
-        }
-        /*Light mode animations*/
-        li:hover #github-logo-dark, li:hover #linkedin-logo-dark {
-          animation: fade-out .5s ease-out forwards;
-        }
-    
-        li:hover #github-letras-logo-dark, li:hover #linkedin-letras-logo-dark {
-          animation: fade-in 1.5s ease-in forwards;
-        }
-
-        li:hover #github-letras-logo-dark {
-          transform: translateX(-2rem);
-          transition: transform .75s ease-in;
-        }
-    
-        li:hover + li #linkedin-logo-dark {
+        }    
+        li:hover + li .narrow-linkedin-logo {
           transform: translateX(1rem);
           transition: transform .75s ease-in;
         }
