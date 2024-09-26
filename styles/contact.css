@@ -43,20 +43,6 @@ main {
   }
 }
 
-@media (prefers-color-scheme: light) {
-  main {
-    .contact {
-      form {
-        .text-input {
-          input {
-            border: 1px var(--color-light-scheme) solid;
-          }
-        }
-      }
-    }
-  }
-}
-
 @media (width > 1024px) {
   main {
     .contact {
@@ -67,6 +53,20 @@ main {
           flex-direction: row;
           .text-input {
             flex: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  main {
+    .contact {
+      form {
+        .text-input {
+          input {
+            border: 1px var(--color-light-scheme) solid;
           }
         }
       }

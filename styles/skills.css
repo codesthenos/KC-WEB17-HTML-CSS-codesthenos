@@ -63,6 +63,17 @@ main {
   }
 }
 
+@media (width > 1024px) {
+  main {
+    .skills {
+      padding: 1rem 5rem;
+      ul {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
 @media (prefers-color-scheme: light) {
   main {
     .skills {
@@ -72,17 +83,6 @@ main {
             border: 1px var(--color-light-scheme) solid;
           }
         }
-      }
-    }
-  }
-}
-
-@media (width > 1024px) {
-  main {
-    .skills {
-      padding: 1rem 5rem;
-      ul {
-        grid-template-columns: repeat(3, 1fr);
       }
     }
   }

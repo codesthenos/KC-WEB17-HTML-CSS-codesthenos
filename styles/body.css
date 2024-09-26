@@ -6,6 +6,37 @@ body {
   min-height: 100dvh;
   background-color: var(--bg-color-dark-scheme);
   color: var(--color-dark-scheme);
+  .light-mode {
+    display: none;
+  }
+  .dark-mode {
+    display: block;
+  }
+  .link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: opacity 1s ease-in-out;
+  }
+  .link:hover {
+    opacity: .5;
+  }
+  .button {
+    color: var(--color-dark-scheme);
+    background-color: var(--bg-color-dark-scheme);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 1rem;
+    display: inline-block;
+    transition: background-color, color 2s ease-in-out;
+  }
+  .button:hover {
+    background-color: green;
+    color: black;
+  }
+  .hidden {
+    display: none;
+  } 
   main { 
     display: flex;
     flex-direction: column;
@@ -24,45 +55,3 @@ body {
     }
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  body {
-    .light-mode {
-      display: none;
-    }
-    .dark-mode {
-      display: block;
-    }
-  }
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  transition: opacity 1s ease-in-out;
-}
-
-.link:hover {
-  opacity: .5;
-}
-
-.button {
-  color: var(--color-dark-scheme);
-  background-color: var(--bg-color-dark-scheme);
-  text-decoration: none;
-  border-radius: 8px;
-  padding: 1rem;
-  display: inline-block;
-  transition: background-color, color 2s ease-in-out;
-}
-
-.button:hover {
-  background-color: green;
-  color: black;
-}
-
-.hidden {
-  display: none;
-}
-
