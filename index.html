@@ -6,12 +6,11 @@
     <meta name="keywords" content="portfolio codsthenos" />
     <meta
       name="description"
-      content="guillermo ruiz arranz codesthenos portfolio"
+      content="Guillermo ruiz arranz codesthenos portfolio"
     />
-    <meta name="language" content="EN" />
     <meta
       name="author"
-      content="guillermo ruiz arranz - codesthenos, codesthenos@gmail.com"
+      content="Guillermo ruiz arranz - codesthenos, codesthenos@gmail.com"
     />
     <title>Codesthenos' Portfolio</title>
     <link
@@ -31,6 +30,7 @@
   </head>
   <body>
     <header class="body-header">
+      <h1 class="hidden">CODESTHENOS' PORTFOLIO</h1>
       <img
         class="dark-mode"
         id="white-header-logo"
@@ -46,7 +46,7 @@
       />
 
       <nav aria-label="Main web navigation" role="navigation">
-        <span>Menu</span>
+        <span aria-label="Main menu">Menu</span>
         <ul>
           <li>
             <a class="link" href="#skills">Skills</a>
@@ -63,7 +63,7 @@
       </nav>
     </header>
 
-    <main>
+    <main role="main">
       <section
         class="description"
         aria-label="Description of Guillermo Ruiz Arranz - codesthenos"
@@ -98,42 +98,84 @@
           <li>
             <h4>Git - GitHub</h4>
             <div class="total-progress">
-              <div class="current-progress" id="git-github-progress"></div>
+              <div
+                class="current-progress"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="50"
+                id="git-github-progress"
+              ></div>
             </div>
           </li>
 
           <li>
             <h4>HTML</h4>
             <div class="total-progress">
-              <div class="current-progress" id="html-progress"></div>
+              <div
+                class="current-progress"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="65"
+                id="html-progress"
+              ></div>
             </div>
           </li>
 
           <li>
             <h4>CSS</h4>
             <div class="total-progress">
-              <div class="current-progress" id="css-progress"></div>
+              <div
+                class="current-progress"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="55"
+                id="css-progress"
+              ></div>
             </div>
           </li>
 
           <li>
             <h4>JavaScript</h4>
             <div class="total-progress">
-              <div class="current-progress" id="javascript-progress"></div>
+              <div
+                class="current-progress"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="80"
+                id="javascript-progress"
+              ></div>
             </div>
           </li>
 
           <li>
             <h4>NodeJS</h4>
             <div class="total-progress">
-              <div class="current-progress" id="nodejs-progress"></div>
+              <div
+                class="current-progress"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="25"
+                id="nodejs-progress"
+              ></div>
             </div>
           </li>
 
           <li>
             <h4>ReactJS</h4>
             <div class="total-progress">
-              <div class="current-progress" id="reactjs-progress"></div>
+              <div
+                class="current-progress"
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="35"
+                id="reactjs-progress"
+              ></div>
             </div>
           </li>
         </ul>
@@ -151,7 +193,8 @@
       </section>
 
       <section class="contact" id="contact">
-        <form aria-label="Contact me form">
+        <h2 class="hidden">Contact form</h2>
+        <form role="form" aria-label="Contact me form">
           <div class="group-2-fields">
             <div class="text-input">
               <label for="name">Name</label>
@@ -161,7 +204,6 @@
                 required
                 aria-required="true"
                 placeholder="put your name here (required)"
-                aria-placeholder="put your name here (required)"
               />
             </div>
 
@@ -173,7 +215,6 @@
                 required
                 aria-required="true"
                 placeholder="put your surname here (required)"
-                aria-placeholder="put your surname here (required)"
               />
             </div>
           </div>
@@ -182,12 +223,11 @@
             <div class="text-input">
               <label for="phone">Phone</label>
               <input
-                type="number"
+                type="tel"
                 id="phone"
                 required
                 aria-required="true"
                 placeholder="put your phone here (required)"
-                aria-placeholder="put your phone here (required)"
               />
             </div>
 
@@ -199,17 +239,26 @@
                 required
                 pattern="^@[^\s]+"
                 title="Username must start with @. Example: @username"
+                aria-describedby="github-username-info"
                 aria-label="Github username (starting with @)"
                 aria-required="true"
                 placeholder="put your github username here (@<username>) (required)"
-                aria-placeholder="put your github username here (@<username>) (required)"
               />
+              <span class="hidden" id="github-username-info">
+                Github usernames must start with @
+              </span>
             </div>
           </div>
 
-          <fieldset aria-labelledby="meeting-question">
+          <fieldset
+            aria-labelledby="meeting-question"
+            aria-describedby="meeting-info"
+          >
             <div>
               <legend id="meeting-question">How did you meet me?</legend>
+              <span id="meeting-info" class="hidden">
+                Please choose how we met
+              </span>
             </div>
             <div>
               <label for="university">University</label>
@@ -274,7 +323,6 @@
               aria-required="true"
               aria-label="Additional information"
               placeholder="more info about you here"
-              aria-placeholder="more info about you here"
             ></textarea>
           </div>
 
@@ -293,14 +341,14 @@
             <button
               class="button"
               type="submit"
-              aria-label="Submit contact form"
+              aria-label="Submit the contact form"
             >
               Submit
             </button>
             <button
               class="button"
               type="reset"
-              aria-label="Reset contact form fields"
+              aria-label="Reset the contact form fields"
             >
               Reset
             </button>
