@@ -13,8 +13,8 @@ main {
       grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
       place-content: center;
       gap: 1.5rem;
-      .skill {
-        h4 {
+      li {
+        > h4 {
           padding-bottom: .5rem;
         }
         .total-progress {
