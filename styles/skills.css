@@ -24,41 +24,29 @@
           border: 1px var(--color-dark-scheme) solid;
           border-radius: 10px;
           position: relative;
-          #git-github-progress {
+          .current-progress {
             height: 99%;
             background-color: red;
             border-radius: 10px;
-            animation: fill-git-github-progress 3s linear forwards;
+            animation: fill-current-progress 3s linear forwards;
+          }
+          #git-github-progress {
+            --progress: 50%
           }
           #html-progress {
-            height: 99%;
-            background-color: red;
-            border-radius: 10px;
-            animation: fill-html-progress 3s linear forwards;
+            --progress: 65%
           }
           #css-progress {
-            height: 99%;
-            background-color: red;
-            border-radius: 10px;
-            animation: fill-css-progress 3s linear forwards;
+            --progress: 55%
           }
           #javascript-progress {
-            height: 99%;
-            background-color: red;
-            border-radius: 10px;
-            animation: fill-javascript-progress 3s linear forwards;
+            --progress: 80%
           }
           #nodejs-progress {
-            height: 99%;
-            background-color: red;
-            border-radius: 10px;
-            animation: fill-nodejs-progress 3s linear forwards;
+            --progress: 25%
           }
           #reactjs-progress {
-            height: 99%;
-            background-color: red;
-            border-radius: 10px;
-            animation: fill-reactjs-progress 3s linear forwards;
+            --progress: 35%
           }
         }
       }
@@ -66,57 +54,12 @@
   }
 }
 
-@keyframes fill-git-github-progress {
+@keyframes fill-current-progress {
   0% {
     width: 0;
   }
   100% {
-    width: 50%;
-  }
-}
-
-@keyframes fill-html-progress {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 65%;
-  }
-}
-
-@keyframes fill-css-progress {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 55%;
-  }
-}
-
-@keyframes fill-javascript-progress {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
-@keyframes fill-nodejs-progress {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 20%;
-  }
-}
-
-@keyframes fill-reactjs-progress {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 30%;
+    width: var(--progress);
   }
 }
 
