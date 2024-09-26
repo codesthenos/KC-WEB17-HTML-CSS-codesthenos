@@ -54,7 +54,7 @@
     div {
       p {
         span {
-          display: block;
+          display: inline-block;
         }
       }
     }
