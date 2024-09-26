@@ -12,6 +12,23 @@ body {
   body {
     background-color: var(--bg-color-light-scheme);
     color: var(--color-light-scheme);
+    .light-mode {
+      display: block;
+    }
+    .dark-mode {
+      display: none;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    .light-mode {
+      display: none;
+    }
+    .dark-mode {
+      display: block;
+    }
   }
 }
 
@@ -44,3 +61,4 @@ body {
 .hidden {
   display: none;
 }
+

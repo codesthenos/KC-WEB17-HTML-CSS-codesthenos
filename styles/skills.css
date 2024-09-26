@@ -63,7 +63,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (width > 1024px) {
   .main {
     .skills {
       padding: 1rem 5rem;
