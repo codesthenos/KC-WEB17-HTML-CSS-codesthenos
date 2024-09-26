@@ -52,24 +52,6 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  #github-logo-dark,
-  #linkedin-logo-dark,
-  #linkedin-letras-logo-dark,
-  #github-letras-logo-dark {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  #github-logo-white,
-  #linkedin-logo-white,
-  #linkedin-letras-logo-white,
-  #github-letras-logo-white {
-    display: none;
-  }
-}
-
 @media (min-width: 1024px) {
   .footer {
     nav {
