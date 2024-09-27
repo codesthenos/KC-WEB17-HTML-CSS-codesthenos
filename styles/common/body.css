@@ -4,8 +4,10 @@ body {
   flex-direction: column;
   min-height: 100vh;
   min-height: 100dvh;
-  background-color: var(--bg-color-dark-scheme);
-  color: var(--color-dark-scheme);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: var(--bg-color);
+  color: var(--color);
   .light-mode {
     display: none;
   }
@@ -22,9 +24,9 @@ body {
     opacity: .5;
   }
   .button {
-    color: var(--color-dark-scheme);
-    border: 1px solid var(--color-dark-scheme);
-    background-color: var(--bg-color-dark-scheme);
+    color: var(--color);
+    border: 1px solid var(--color);
+    background-color: var(--bg-color);
     cursor: pointer;
     text-decoration: none;
     border-radius: 8px;
@@ -46,18 +48,11 @@ body {
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: var(--bg-color-light-scheme);
-    color: var(--color-light-scheme);
     .light-mode {
       display: block;
     }
     .dark-mode {
       display: none;
-    }
-    .button {
-      background-color: var(--bg-color-light-scheme);
-      border: 1px solid var(--color-light-scheme);
-      color: var(--color-light-scheme);
     }
   }
 }

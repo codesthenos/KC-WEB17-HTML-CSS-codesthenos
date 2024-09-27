@@ -1,7 +1,7 @@
 .body-header {
   position: sticky;
   top: 0;
-  background-color: var(--bg-color-dark-scheme);
+  background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,11 +9,5 @@
   z-index: 99;
   img {
     max-height: 3.5rem;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  .body-header {
-    background-color: var(--bg-color-light-scheme);
   }
 }

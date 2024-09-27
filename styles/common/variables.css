@@ -1,8 +1,11 @@
 :root {
-  --bg-color-light-scheme: #f5f5f5;
-  --color-light-scheme: #111;
-  --bg-color-dark-scheme: #2c2d2e;
-  --color-dark-scheme: #e9f0f1;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  --bg-color: #2c2d2e;
+  --color: #e9f0f1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #f5f5f5;
+    --color: #111;
+  }
 }
