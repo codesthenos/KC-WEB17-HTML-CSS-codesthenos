@@ -37,7 +37,7 @@
   </head>
   <body>
     <header class="body-header">
-      <h1 class="hidden">CODESTHENOS' PORTFOLIO</h1>
+      <h1 class="sr-only">CODESTHENOS' PORTFOLIO</h1>
       <img
         class="dark-mode"
         id="white-header-logo"
@@ -190,7 +190,7 @@
       </section>
 
       <section class="banner" id="projects" aria-labelledby="projects-heading">
-        <h2 class="hidden" id="projects-heading">Projects</h2>
+        <h2 class="sr-only" id="projects-heading">Projects</h2>
         <div
           class="banner-image"
           role="img"
@@ -200,8 +200,12 @@
         <a class="button" href="projects.html">Codesthenos' portfolio</a>
       </section>
 
-      <section class="contact" id="contact">
-        <h2 class="hidden">Contact form</h2>
+      <section
+        class="contact"
+        id="contact"
+        aria-labelledby="contact-form-heading"
+      >
+        <h2 class="sr-only" id="contact-form-heading">Contact form</h2>
         <form role="form" aria-label="Contact me form">
           <div class="group-2-fields">
             <div class="text-input">
@@ -252,7 +256,7 @@
                 aria-required="true"
                 placeholder="put your github username here (@<username>) (required)"
               />
-              <span class="hidden" id="github-username-info">
+              <span class="sr-only" id="github-username-info">
                 Github usernames must start with @
               </span>
             </div>
@@ -264,7 +268,7 @@
           >
             <div>
               <legend id="meeting-question">How did you meet me?</legend>
-              <span id="meeting-info" class="hidden">
+              <span id="meeting-info" class="sr-only">
                 Please choose how we met
               </span>
             </div>
@@ -366,9 +370,9 @@
     </main>
 
     <footer class="footer">
-      <div class="hidden">
+      <div class="block">
         <p>
-          <span class="hidden">Special thanks</span> to
+          <span class="inline-block">Special thanks</span> to
           <a
             class="link"
             href="https://github.com/kevinccbsg"
@@ -457,10 +461,10 @@
         </ul>
       </nav>
 
-      <div class="hidden">
+      <div class="block">
         <p>
           © <strong>codesthenos</strong>
-          <span class="hidden">Almost all rights reserved | 2024</span>
+          <span class="inline-block">Almost all rights reserved | 2024</span>
         </p>
       </div>
     </footer>

@@ -43,7 +43,7 @@
 /*Media querie to show the creator at the right, and Kevin in the left, his teacher*/
 @media (width > 450px) {
   .footer {
-    div {
+    .block {
       display: block;
     }
   }
@@ -51,12 +51,8 @@
 /*Media querie to show add 'special thanks' and the 'almost all rights reserved'*/
 @media (width > 730px) {
   .footer {
-    div {
-      p {
-        span {
-          display: inline-block;
-        }
-      }
+    .inline-block {
+      display: inline-block;
     }
   }
 }
