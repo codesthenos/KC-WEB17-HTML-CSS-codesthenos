@@ -11,12 +11,29 @@
     max-height: 3.5rem;
   }
   nav {
+    position: relative;
+    input {
+      position: absolute;
+      top: 2px;
+      right: 12px;
+      opacity: 0;
+    }
+    input:checked + ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+      margin: 0;
+      position: absolute;
+      right: -1rem;
+      top: 2rem;
+      background-color: var(--bg-color);
+    }
     ul {
       display: none;
-    }
-
-    span {
-      display: block;
     }
   }
 }
@@ -24,12 +41,14 @@
 @media (width > 600px) {
   .body-header {
     nav {
-      span {
+      label, input {
         display: none;
-      }    
-      ul {
+      }
+      ul, input:checked + ul {
+        position: initial;
         list-style: none;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         gap: 2rem;
         padding: 0;
