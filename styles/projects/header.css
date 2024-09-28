@@ -11,3 +11,9 @@
     max-height: 3.5rem;
   }
 }
+
+@media (width > 1024px) {
+  .body-header {
+    background-color: transparent;
+  }
+}
