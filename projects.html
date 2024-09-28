@@ -52,7 +52,7 @@
 
       <nav aria-label="Back to landing page navigation" role="navigation">
         <a
-          aria-label="Back to landing page"
+          aria-label="Navigate back to landing page"
           class="button"
           href="index.html"
           title="to localhost:5500 xD"
@@ -68,12 +68,16 @@
         <div>
           <iframe
             src="https://www.youtube.com/embed/HEMvsJTBweY?si=Pa0EOvC7rheS72gu"
-            title="Midudev how to create a portfolio, spanish audio"
+            title="Midudev portfolio tutorial"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
+            aria-describedby="video-description"
           ></iframe>
+          <p id="video-description" class="sr-only">
+            tutorial by Midudev on how to create a portfolio website in Spanish.
+          </p>
         </div>
       </section>
 
@@ -82,34 +86,34 @@
           <h2 id="projects-heading">My projects</h2>
 
           <div class="projects-grid">
-            <div class="grid-item">
-              <img src="assets/bannerHD.png" alt="" />
-              <h4>Project 1</h4>
-            </div>
-            <div class="grid-item">
-              <img src="assets/bannerHD.png" alt="" />
-              <h4>Project 2</h4>
-            </div>
-            <div class="grid-item">
-              <img src="assets/bannerHD.png" alt="" />
-              <h4>Project 3</h4>
-            </div>
-            <div class="grid-item">
-              <img src="assets/bannerHD.png" alt="" />
-              <h4>Project 4</h4>
-            </div>
-            <div class="grid-item">
-              <img src="assets/bannerHD.png" alt="" />
-              <h4>Project 5</h4>
-            </div>
-            <div class="grid-item">
-              <img src="assets/bannerHD.png" alt="" />
-              <h4>Project 6</h4>
-            </div>
-            <div class="grid-item">
-              <img src="assets/bannerHD.png" alt="" />
-              <h4>Project 7</h4>
-            </div>
+            <figure class="grid-item">
+              <img src="assets/bannerHD.png" alt="Project 1 screenshot" />
+              <figcaption>Project 1</figcaption>
+            </figure>
+            <figure class="grid-item">
+              <img src="assets/bannerHD.png" alt="Project 2 screenshot" />
+              <figcaption>Project 2</figcaption>
+            </figure>
+            <figure class="grid-item">
+              <img src="assets/bannerHD.png" alt="Project 3 screenshot" />
+              <figcaption>Project 3</figcaption>
+            </figure>
+            <figure class="grid-item">
+              <img src="assets/bannerHD.png" alt="Project 4 screenshot" />
+              <figcaption>Project 4</figcaption>
+            </figure>
+            <figure class="grid-item">
+              <img src="assets/bannerHD.png" alt="Project 5 screenshot" />
+              <figcaption>Project 5</figcaption>
+            </figure>
+            <figure class="grid-item">
+              <img src="assets/bannerHD.png" alt="Project 6 screenshot" />
+              <figcaption>Project 6</figcaption>
+            </figure>
+            <figure class="grid-item">
+              <img src="assets/bannerHD.png" alt="Project 7 screenshot" />
+              <figcaption>Project 7</figcaption>
+            </figure>
           </div>
         </div>
       </section>
