@@ -72,7 +72,7 @@
             transform: translateX(-2rem);
             transition: transform .75s ease-in;
           }    
-          .narrow-linkedin-logo {
+          + li .narrow-linkedin-logo {
             transform: translateX(1rem);
             transition: transform .75s ease-in;
           }

@@ -1,3 +1,21 @@
 .projects {
-  text-align: center;
+  padding: 1rem;
+  h2 {
+    margin: 0;
+  }
+  h4 {
+    margin: 0;
+    padding-top: 1rem;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 1rem;
+    gap: 1rem;
+    .grid-item {
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
