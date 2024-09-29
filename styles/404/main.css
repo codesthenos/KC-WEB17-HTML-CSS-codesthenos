@@ -10,12 +10,25 @@ main {
     font-size: 3rem;
   }
   figure {
+    transition: opacity 1s ease;
     margin: 0;
     img {
       width: 100%;
       max-width: 600px;
       animation: fade-in-from-left 3s ease-in forwards;
     }
+  }
+  figure:hover {
+    opacity: 0;
+    + label {
+      animation: fade-in 1s ease forwards;
+    }
+  }
+  label {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 600;
+    opacity: 0;
   }
 }
 
@@ -29,6 +42,15 @@ main {
   }
   66% {
     transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
   100% {
     opacity: 1;
