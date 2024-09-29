@@ -1,0 +1,36 @@
+main {
+  height: 66vh;
+  height: 66dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+  figure {
+    margin: 0;
+    img {
+      width: 100%;
+      max-width: 600px;
+      animation: fade-in-from-left 3s ease-in forwards;
+    }
+  }
+}
+
+@keyframes fade-in-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  33% {
+    transform: translateX(120%);
+  }
+  66% {
+    transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
