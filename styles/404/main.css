@@ -12,6 +12,9 @@ main {
     margin: 0;
     font-size: 3rem;
     transition: opacity 1s ease;
+    .error-not-found {
+      display: none;
+    }
   }
   figure {
     order: 2;
@@ -29,6 +32,7 @@ main {
       opacity: 0;
     }
     ~ label {
+      text-align: center;
       animation: fade-in 1s ease forwards;
     }
   }
@@ -62,5 +66,18 @@ main {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (width > 767px) {
+  main {
+    h1 {
+      .error-404 {
+        display: none;
+      }
+      .error-not-found {
+        display: inline-block;
+      }
+    }
   }
 }
