@@ -31,9 +31,27 @@ main {
     transform-origin: center;
   }
   div::before {
-    transform: rotate(45deg);
+    animation: rotation-1 2s ease forwards;
   }
   div::after {
+    animation: rotation-2 1s ease forwards;
+  }
+}
+
+@keyframes rotation-1 {
+  0% {
+    transform: translateY(-60%);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotation-2 {
+  0% {
+    transform: translateY(30%);
+  }
+  100% {
     transform: rotate(-45deg);
   }
 }
