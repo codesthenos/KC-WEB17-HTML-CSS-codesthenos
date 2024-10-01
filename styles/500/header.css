@@ -3,11 +3,17 @@
   top: 0;
   background-color: var(--bg-color);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem;
   z-index: 99;
   img {
     max-height: 3.5rem;
+  }
+}
+
+@media (width > 1023px) {
+  .body-header {
+    justify-content: space-evenly;
   }
 }
