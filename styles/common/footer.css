@@ -32,8 +32,15 @@
         opacity: 0;
       }
       .narrow-logo {
-        animation: fade-in 0.5s ease-in forwards;
-      }  
+        animation: fade-in 1s ease-in forwards;
+      }
+      .wide-logo {
+        animation: fade-out .5s ease-in forwards;
+      }
+      .wide-github-logo {
+        transform: translateX(2rem);
+        transition: transform .5s ease-in;
+      }
       img {
         max-height: 2.5rem;
       }
