@@ -60,6 +60,7 @@ main {
   main {
     h1 {
       span {
+        color: var(--brand-color);
         display: inline-block;
       }
     }

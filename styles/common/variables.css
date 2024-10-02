@@ -1,6 +1,7 @@
 :root {
   --bg-color: #2c2d2e;
   --color: #e9f0f1;
+  --brand-color: #32a852;
 }
 
 @media (prefers-color-scheme: light) {

@@ -32,7 +32,7 @@
         opacity: 0;
       }
       .narrow-logo {
-        animation: fade-in 1s ease-in forwards;
+        animation: fade-in .5s ease-in forwards;
       }
       .wide-logo {
         animation: fade-out .5s ease-in forwards;

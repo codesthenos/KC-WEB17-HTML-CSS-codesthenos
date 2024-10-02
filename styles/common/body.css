@@ -16,17 +16,19 @@ body {
   }
   .link {
     text-decoration: none;
-    color: inherit;
+    color: var(--brand-color);
+    font-weight: 600;
     cursor: pointer;
     transition: opacity 1s ease-in-out;
   }
   .link:hover {
-    opacity: .5;
+    opacity: .7;
   }
   .button {
     color: var(--color);
     border: 1px solid var(--color);
-    background-color: var(--bg-color);
+    background-color: var(--brand-color);
+    font-weight: 600;
     cursor: pointer;
     text-decoration: none;
     border-radius: 8px;
