@@ -38,21 +38,23 @@ main {
   }
 }
 
-@keyframes rotation-1 {
-  0% {
-    transform: translateY(-60%);
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes rotation-1 {
+    0% {
+      transform: translateY(-60%);
+    }
+    100% {
+      transform: rotate(45deg);
+    }
   }
-  100% {
-    transform: rotate(45deg);
-  }
-}
-
-@keyframes rotation-2 {
-  0% {
-    transform: translateY(30%);
-  }
-  100% {
-    transform: rotate(-45deg);
+  
+  @keyframes rotation-2 {
+    0% {
+      transform: translateY(30%);
+    }
+    100% {
+      transform: rotate(-45deg);
+    }
   }
 }
 

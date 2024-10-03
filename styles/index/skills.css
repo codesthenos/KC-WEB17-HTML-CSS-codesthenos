@@ -31,21 +31,27 @@ main {
             animation: fill-current-progress 3s linear forwards;
           }
           #git-github-progress {
+            width: 50%;
             --progress: 50%
           }
           #html-progress {
+            width: 65%;
             --progress: 65%
           }
           #css-progress {
+            width: 55%;
             --progress: 55%
           }
           #javascript-progress {
+            width: 80%;
             --progress: 80%
           }
           #nodejs-progress {
+            width: 25%;
             --progress: 25%
           }
           #reactjs-progress {
+            width: 35%;
             --progress: 35%
           }
         }
@@ -54,12 +60,14 @@ main {
   }
 }
 
-@keyframes fill-current-progress {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: var(--progress);
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes fill-current-progress {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: var(--progress);
+    }
   }
 }
 
