@@ -30,12 +30,10 @@
       .wide-logo {
         position: absolute;
         opacity: 0;
+        animation: fade-out .5s ease-in forwards;
       }
       .narrow-logo {
         animation: fade-in .5s ease-in forwards;
-      }
-      .wide-logo {
-        animation: fade-out .5s ease-in forwards;
       }
       .wide-github-logo {
         transform: translateX(2rem);
@@ -64,32 +62,31 @@
   }
 }
 /*Media querie to add the footer icons animations*/
-@media (width > 1024px) {
-  .footer {
-    nav {
-      ul {
-        li:hover {
-          .narrow-logo {
-            animation: fade-out .5s ease-out forwards;
-          }
-          .wide-logo {
-            animation: fade-in 1.5s ease-in forwards;
-          }    
-          .wide-github-logo {
-            transform: translateX(-2rem);
-            transition: transform .75s ease-in;
-          }    
-          + li .narrow-linkedin-logo {
-            transform: translateX(1rem);
-            transition: transform .75s ease-in;
+@media (prefers-reduced-motion: no-preference) {
+  @media (width > 1024px) {
+    .footer {
+      nav {
+        ul {
+          li:hover {
+            .narrow-logo {
+              animation: fade-out .5s ease-out forwards;
+            }
+            .wide-logo {
+              animation: fade-in 1.5s ease-in forwards;
+            }    
+            .wide-github-logo {
+              transform: translateX(-2rem);
+              transition: transform .75s ease-in;
+            }    
+            + li .narrow-linkedin-logo {
+              transform: translateX(1rem);
+              transition: transform .75s ease-in;
+            }
           }
         }
       }
     }
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
   @keyframes fade-in {
     0% {
       opacity: 0;
