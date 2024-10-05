@@ -6,7 +6,7 @@ main {
     display: flex;
     justify-content: center;
     .banner-image {
-      background-image: url('../../assets/bannerHD.png');
+      background-image: url('../../assets/bannerHD-867.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;

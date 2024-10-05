@@ -1,7 +1,8 @@
 main {
   .contact {
     padding: 1rem;
-    padding-top: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
     form {
       display: flex;
       flex-direction: column;
@@ -46,8 +47,6 @@ main {
 @media (width > 1024px) {
   main {
     .contact {
-      padding: 1rem 5rem;
-      padding-top: 1.5rem;
       form {
         .group-2-fields {
           flex-direction: row;

@@ -1,6 +1,8 @@
 main {
   .description {
     padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
     > div {
       display: flex;
       align-items: center;
@@ -12,14 +14,6 @@ main {
     p {
       margin: 0;
       padding: 1rem 0;
-    }
-  }
-}
-
-@media (width > 1024px) {
-  main {
-    .description {
-      padding: 1rem 5rem;
     }
   }
 }

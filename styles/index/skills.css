@@ -1,6 +1,8 @@
 main {
   .skills {
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
     h2, h4 {
       margin: 0;
     }
@@ -74,7 +76,6 @@ main {
 @media (width > 1024px) {
   main {
     .skills {
-      padding: 1rem 5rem;
       ul {
         grid-template-columns: repeat(3, 1fr);
       }
