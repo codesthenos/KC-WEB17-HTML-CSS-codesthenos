@@ -19,7 +19,7 @@ body {
     color: var(--brand-color);
     font-weight: 600;
     cursor: pointer;
-    transition: opacity 1s ease-in-out;
+    transition: 1s ease-in-out;
   }
   .link:hover {
     opacity: .7;
