@@ -1,6 +1,6 @@
 .body-header {
   position: sticky;
-  top: 0;
+  top: -1px;
   background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
